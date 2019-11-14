@@ -2,12 +2,14 @@ package com.hyr.youling.servicecenter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-public class ServiceCenterApplication {
+@EnableEurekaServer
+public class RegisterCenterApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceCenterApplication.class, args);
+        SpringApplication.run(RegisterCenterApplication.class, args);
     }
 
 }
